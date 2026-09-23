@@ -13,9 +13,13 @@
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
 <style>
 @font-face { font-family:'Fraunces'; font-style:normal; font-weight:300 700; src:url('assets/fonts/fraunces-normal.woff2') format('woff2'); }
+
 @font-face { font-family:'Fraunces'; font-style:italic; font-weight:300 700; src:url('assets/fonts/fraunces-italic.woff2') format('woff2'); }
+
 @font-face { font-family:'Karla'; font-style:normal; font-weight:300 600; src:url('assets/fonts/karla-normal.woff2') format('woff2'); }
+
 @font-face { font-family:'Karla'; font-style:italic; font-weight:300 600; src:url('assets/fonts/karla-italic.woff2') format('woff2'); }
+
 
 :root{
   --cream:#F6F0E3; --cream2:#FCF8EE; --card:#FDFAF2;
@@ -26,155 +30,335 @@
   --orange:#ED6520;
   --hair:#E3DAC7;
 }
+
 *{margin:0;padding:0;box-sizing:border-box;}
+
 body{ background:#f2f2e8; color:var(--ink); font-family:'Karla',sans-serif; font-weight:340; font-size:18.5px; line-height:1.68; }
+
 .wrap{ max-width:1240px; margin:0 auto; padding:0 20px; }
+
 .eyebrow{ font-size:12.5px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--sage-deep); }
+
 .serif{ font-family:'Fraunces',serif; }
+
 h1,h2,h3{ font-family:'Fraunces',serif; font-weight:420; line-height:1.12; letter-spacing:-.01em; }
+
 em.accent{ font-style:italic; font-weight:380; }
+
 .orange{ color:var(--orange); }
+
 
 /* nav */
 nav{ height:104px; display:flex; align-items:center; justify-content:space-between; }
+
 nav img.logo{ width:144px; height:auto; max-width:144px; }
+
 nav .links{ display:flex; gap:38px; align-items:center; font-size:15px; font-weight:500; color:var(--sage-ink); }
+
 nav .links a{ color:inherit; text-decoration:none; }
+
 .btn{display:inline-block;text-decoration:none;background:#c24f0a;color:#fffaf0;padding:17px 29px;border-radius:999px;font-size:15px;font-weight:600;letter-spacing:.02em;box-shadow:0 9px 22px rgba(194,79,10,.16)}
+
 .btn.ghost{ background:transparent; color:var(--sage-ink); box-shadow:inset 0 0 0 1.5px var(--sage); }
+
 
 /* hero */
 .hero{ padding:64px 0 110px; display:grid; grid-template-columns:1fr 470px; gap:90px; align-items:center; position:relative; }
+
 .hero .eyebrow{ display:flex; align-items:center; gap:14px; margin-bottom:30px; }
+
 .hero .eyebrow::before{ content:''; width:44px; height:1.5px; background:var(--sage); }
+
 .hero h1{ font-size:74px; margin-bottom:28px; }
+
 .hero h1 em{ color:var(--sage-deep); }
+
 .hero p.tag{ font-family:'Fraunces',serif; font-style:italic; font-size:19px; color:var(--ink-soft); margin-bottom:44px; }
+
 .hero .cta{ display:flex; gap:18px; align-items:center; }
+
 .hero .under{ font-size:15px; text-decoration:none; font-weight:600; color:var(--sage-ink); border-bottom:1.5px solid var(--sage); padding-bottom:3px; }
+
 .arch{ border-radius:999px 999px 28px 28px; overflow:hidden; }
+
 .hero-img{ height:600px; box-shadow:0 30px 60px -20px rgba(72,84,63,.35); position:relative; }
+
 .hero-img img{ width:100%; height:100%; object-fit:cover; }
+
 .hero-visual{ position:relative; }
+
 .hero .badge{ position:absolute; left:-52px; bottom:70px; width:150px; height:150px; border-radius:50%; background:var(--apricot); display:flex; align-items:center; justify-content:center; text-align:center; font-family:'Fraunces',serif; font-style:italic; font-size:16.5px; line-height:1.35; color:#7A5230; box-shadow:0 18px 40px -14px rgba(122,82,48,.4); padding:18px; }
+
 
 /* values strip */
 .strip{ background:var(--sage-deep); color:var(--cream2); padding:74px 0; text-align:center; position:relative; }
+
 .strip p{ font-family:'Fraunces',serif; font-style:italic; font-weight:360; font-size:27px; line-height:1.5; width:820px; margin:0 auto; color:#F8E7D4; }
+
 .strip p b{ font-weight:560; font-style:normal; color:#fff; }
+
 
 /* sections */
 section{ padding:110px 0; }
+
 .sec-head{ text-align:center; margin-bottom:70px; }
+
 .sec-head .eyebrow{ margin-bottom:18px; }
+
 .sec-head h2{ font-size:46px; }
+
 .sec-head p.sub{ margin-top:16px; color:var(--ink-soft); font-size:17.5px; }
+
 
 /* start-here cards */
 .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:34px; }
+
 .card{ background:var(--card); border-radius:26px; overflow:hidden; box-shadow:0 22px 44px -22px rgba(140,72,26,.20); }
+
 .card .img{ height:250px; overflow:hidden; }
+
 .card .img img{ width:100%; height:100%; object-fit:cover; }
+
 .card .body{ padding:34px 36px 38px; }
+
 .card .chip{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; padding:8px 16px; border-radius:999px; margin-bottom:20px; }
+
 .card:nth-child(1) .chip{ background:var(--sage-soft); color:var(--sage-ink); }
+
 .card:nth-child(2) .chip{ background:var(--apricot); color:#8A5A33; }
+
 .card:nth-child(3) .chip{ background:var(--rose); color:#96604A; }
+
 .card h3{ font-size:27px; margin-bottom:12px; }
+
 .card p{ font-size:17.5px; color:var(--ink-soft); margin-bottom:22px; }
+
 .card .more{ font-size:15px; text-decoration:none; font-weight:600; color:var(--sage-deep); }
+
 .card .more::after{ content:' →'; }
+
 
 /* about */
 .about{ background:var(--cream2); border-top:1.5px dashed var(--hair); border-bottom:1.5px dashed var(--hair); }
+
 .about .wrap{ display:grid; grid-template-columns:450px 1fr; gap:96px; align-items:center; }
+
 .about .arch{ height:560px; box-shadow:0 26px 54px -22px rgba(72,84,63,.3); }
+
 .about .arch img{ width:100%; height:100%; object-fit:cover; }
+
 .about h2{ font-size:44px; margin:18px 0 24px; }
+
 .about p{ color:var(--ink-soft); margin-bottom:18px; font-size:19px; line-height:1.72; }
+
 .about .sig{ font-family:'Fraunces',serif; font-style:italic; font-size:30px; color:var(--orange); margin-top:26px; }
+
 
 /* episodes */
 .episodes .list{ background:var(--card); border-radius:26px; padding:18px 46px; box-shadow:0 22px 44px -22px rgba(140,72,26,.18); }
+
 .ep{ display:grid; grid-template-columns:70px 1fr auto; gap:28px; align-items:center; padding:30px 0; border-bottom:1.5px dashed var(--hair); }
+
 .ep:last-child{ border-bottom:none; }
+
 .ep .num{ width:54px; height:54px; border-radius:50%; background:var(--sage-soft); color:var(--sage-ink); font-family:'Fraunces',serif; font-size:20px; display:flex; align-items:center; justify-content:center; }
+
 .ep h3{ font-size:23px; margin-bottom:6px; }
+
 .ep .meta{ font-size:13.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; }
+
 .ep .play{ font-size:14.5px; text-decoration:none; font-weight:600; color:var(--sage-deep); border:1.5px solid var(--sage); border-radius:999px; padding:10px 22px; }
+
 
 /* testimonials */
 .testimonials{ background:var(--cream2); border-top:1.5px dashed var(--hair); }
+
 .testimonial-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:34px; max-width:920px; margin:0 auto; }
+
 .testimonial{ background:var(--card); border-radius:26px; padding:26px; box-shadow:0 22px 44px -22px rgba(140,72,26,.18); }
+
 .testimonial-thumb{ position:relative; border-radius:18px; overflow:hidden; background:#2f261f; aspect-ratio:16/9; }
+
 .testimonial-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+
 .testimonial-thumb .play-overlay{ position:absolute; left:18px; bottom:18px; background:var(--cream2); color:var(--sage-ink); border-radius:999px; padding:10px 18px; font-size:14px; font-weight:600; text-decoration:none; box-shadow:0 8px 20px rgba(63,49,34,.2); }
+
 .testimonial h3{ font-size:23px; margin:20px 0 6px; }
+
 .testimonial p{ color:var(--ink-soft); font-size:15px; }
+
 
 /* newsletter */
 .news .panel{ background:var(--sage-deep); border-radius:30px; padding:86px 90px; display:grid; grid-template-columns:1.1fr 1fr; gap:70px; align-items:center; position:relative; }
+
 .news .panel::after{ content:''; position:absolute; inset:14px; border:1.5px dashed rgba(246,240,227,.45); border-radius:20px; pointer-events:none; }
+
 .news h2{ color:var(--cream2); font-size:42px; margin-bottom:18px; }
+
 .news p{ color:#F3D5B8; font-size:18px; }
+
 .news .form{ display:flex; gap:12px; }
+
 .news .input{ flex:1; background:rgba(246,240,227,.14); border:1.5px solid rgba(246,240,227,.4); border-radius:999px; padding:17px 26px; color:#FBEEDC; font-size:15.5px; font-family:'Karla'; }
+
 .news .input::placeholder{color:#DEAB7F;}
+
 .news .go{ background:var(--cream2); color:var(--sage-ink); border-radius:999px; padding:17px 30px; font-weight:600; font-size:15px; white-space:nowrap; }
+
 
 /* footer */
 footer{ padding:80px 0 60px; text-align:center; }
+
 footer img.logo{ width:172px; height:auto; max-width:172px; margin-bottom:20px; }
+
 footer p.tag{ font-family:'Fraunces',serif; font-style:italic; font-size:15.5px; color:var(--ink-soft); margin-bottom:34px; }
+
 footer .links{ display:flex; gap:34px; justify-content:center; font-size:14px; font-weight:600; color:var(--sage-ink); margin-bottom:40px; }
+
 footer .links a{ color:inherit; text-decoration:none; }
+
 footer .fine{ font-size:12.5px; color:#B39B7E; letter-spacing:.06em; }
+
 .wave{ display:block; width:100%; height:60px; margin-bottom:-1px; }
+
 /* mobile */
 @media (max-width: 960px){
   nav{ height:84px; }
+
   nav img.logo{ width:120px; height:auto; max-width:120px; }
+
   nav .links a:not(.btn){ display:none; }
+
   nav .links .btn{padding:14px 22px;font-size:14px}
+
   .hero{ grid-template-columns:1fr; gap:56px; padding:36px 0 84px; }
+
   .hero h1{ font-size:46px; }
+
   .hero p.tag{ font-size:17.5px; margin-bottom:34px; }
+
   .hero-img{ height:520px; }
+
   .hero .badge{ left:-8px; bottom:40px; width:122px; height:122px; font-size:14px; padding:14px; }
+
   .strip{ padding:56px 0; }
+
   .strip p{ width:auto; padding:0 26px; font-size:21.5px; }
+
   .strip p br{ display:none; }
+
   section{ padding:76px 0; }
+
   .sec-head{ margin-bottom:46px; }
+
   .sec-head h2{ font-size:34px; }
+
   .cards{ grid-template-columns:1fr; gap:26px; }
+
   .card .img{ height:230px; }
+
   .about .wrap{ grid-template-columns:1fr; gap:52px; }
+
   .about .arch{ height:460px; max-width:420px; }
+
   .about h2{ font-size:31px; }
+
   .about h2 br{ display:none; }
+
   .episodes .list{ padding:10px 24px; }
+
   .ep{ grid-template-columns:46px 1fr auto; gap:16px; padding:22px 0; }
+
   .ep .num{ width:44px; height:44px; font-size:17px; }
+
   .ep h3{ font-size:18px; }
+
   .ep .meta{ font-size:11.5px; }
+
   .ep .play{ padding:8px 16px; font-size:13px; }
+
   .testimonial-grid{ grid-template-columns:1fr; }
+
   .news .panel{ grid-template-columns:1fr; gap:36px; padding:54px 30px; }
+
   .news h2{ font-size:32px; }
+
   .news .form{ flex-direction:column; }
+
   .news .go{ text-align:center; }
+
   footer .links{ flex-wrap:wrap; gap:20px 26px; padding:0 20px; }
+
 }
 
+
 /* Canonical site header */
-.site-header{max-width:1240px;height:104px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.site-header>a:first-child{display:flex;align-items:center;flex:0 0 auto}.site-header .logo{display:block;width:144px;height:auto;max-width:144px}.site-header .links{display:flex;align-items:center;gap:28px;white-space:nowrap}.site-header .links>a:not(.btn){font-family:'Karla',sans-serif;font-size:15px;font-weight:500;color:#8f3508;text-decoration:none}.site-header .btn{display:inline-block;text-decoration:none;background:#c24f0a;color:#fffaf0;padding:17px 29px;border-radius:999px;font-family:'Karla',sans-serif;font-size:15px;font-weight:600;line-height:1;letter-spacing:.02em;box-shadow:0 9px 22px rgba(194,79,10,.16)}
-@media(max-width:820px){.site-header{height:84px;padding:0 18px;overflow-x:auto}.site-header .logo{width:120px;max-width:120px}.site-header .links{gap:17px}.site-header .links>a:not(.btn){font-size:14px}.site-header .btn{padding:14px 22px;font-size:14px}}
+.site-header{max-width:1240px;height:104px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-header>a:first-child{display:flex;align-items:center;flex:0 0 auto}
+.site-header .logo{display:block;width:144px;height:auto;max-width:144px}
+.site-header .links{display:flex;align-items:center;gap:28px;white-space:nowrap}
+.site-header .links>a:not(.btn){font-family:'Karla',sans-serif;font-size:15px;font-weight:500;color:#8f3508;text-decoration:none}
+.site-header .btn{display:inline-block;text-decoration:none;background:#c24f0a;color:#fffaf0;padding:17px 29px;border-radius:999px;font-family:'Karla',sans-serif;font-size:15px;font-weight:600;line-height:1;letter-spacing:.02em;box-shadow:0 9px 22px rgba(194,79,10,.16)}
+
+@media(max-width:820px){.site-header{height:84px;padding:0 18px;overflow-x:auto}
+.site-header .logo{width:120px;max-width:120px}
+.site-header .links{gap:17px}
+.site-header .links>a:not(.btn){font-size:14px}
+.site-header .btn{padding:14px 22px;font-size:14px}
+}
+
 
 /* Mobile header: match Home */
-@media(max-width:960px){.site-header{height:84px;padding:0 18px;overflow:visible}.site-header .logo{width:120px;max-width:120px}.site-header .links{gap:0;min-width:0}.site-header .links>a:not(.btn){display:none}.site-header .btn{padding:14px 22px;font-size:14px}}
-.coach-quotes-after{background:#fffdf8}.coach-close{padding:86px 28px;background:#f6f0e3}.coach-close-inner{max-width:880px;margin:auto;text-align:center;background:#374636;color:#fffaf0;border-radius:30px;padding:64px 42px;box-shadow:0 22px 50px rgba(55,70,54,.16)}.coach-close-inner h2{font:500 44px/1.15 "Playfair Display",serif;margin:0 auto 18px;max-width:700px}.coach-close-inner p{color:#d8cdbb;font-size:19px;margin:0 0 28px}.coach-close-inner .eyebrow{color:#ffe2ca}@media(max-width:760px){.coach-close{padding:64px 18px}.coach-close-inner{padding:46px 24px}.coach-close-inner h2{font-size:36px}}.video-quote{display:block;overflow:hidden;padding:0}.video-quote video{display:block;width:100%;aspect-ratio:9/16;max-height:520px;object-fit:cover;background:#201b17}.video-quote>div{padding:24px}.video-quote>div p{margin-bottom:0}.quote-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}.quote{min-height:280px}.quote img{width:150px;height:150px}.video-quote video{max-height:620px}.featured-quote{padding:76px 28px;background:#f6f0e3}.featured-quote figure{max-width:880px;margin:0 auto;display:grid;grid-template-columns:112px 1fr;column-gap:30px;align-items:center;background:#fffdf8;border-radius:28px;padding:38px 44px;box-shadow:0 18px 44px rgba(63,41,25,.07)}.featured-quote img{grid-row:1/3;width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:50% 42%;box-shadow:0 9px 24px rgba(63,41,25,.15)}.featured-quote blockquote{font:italic 500 20px/1.55 "Playfair Display",serif;color:#3b291d;margin:0}.hero-proof{max-width:780px;margin:0 auto;padding:64px 28px 6px;text-align:center}.hero-proof blockquote{font:italic 500 25px/1.45 "Playfair Display",serif;color:#49382c;margin:0}.hero-proof cite{display:block;margin-top:20px;font:700 15px "DM Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8f3508}@media(max-width:760px){.hero-proof blockquote{font-size:21px}}.featured-quote figcaption{margin-top:13px;color:#8f3508;font-weight:600;font-size:17px}@media(max-width:760px){.quote-grid{grid-template-columns:1fr}.quote{min-height:240px}.featured-quote{padding:58px 18px}.featured-quote figure{grid-template-columns:76px 1fr;gap:20px;padding:28px 24px}.featured-quote img{width:76px;height:76px}.featured-quote blockquote{font-size:21px}.featured-quote figcaption{grid-column:2}}.sachi-video-wrap{position:relative;aspect-ratio:9/16;max-height:620px;background:#201b17}.sachi-video-wrap video{width:100%;height:100%;object-fit:cover}.sachi-poster{position:absolute;inset:0;border:0;padding:0;background:#201b17;cursor:pointer}.sachi-poster[hidden]{display:none}.sachi-poster img{width:100%;height:100%;object-fit:cover}.sachi-poster span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:rgba(194,79,10,.92);color:white;font-size:23px;padding-left:3px;box-shadow:0 10px 26px rgba(0,0,0,.2)}</style>
+@media(max-width:960px){.site-header{height:84px;padding:0 18px;overflow:visible}
+.site-header .logo{width:120px;max-width:120px}
+.site-header .links{gap:0;min-width:0}
+.site-header .links>a:not(.btn){display:none}
+.site-header .btn{padding:14px 22px;font-size:14px}
+}
+
+.coach-quotes-after{background:#fffdf8}
+.coach-close{padding:86px 28px;background:#f6f0e3}
+.coach-close-inner{max-width:880px;margin:auto;text-align:center;background:#374636;color:#fffaf0;border-radius:30px;padding:64px 42px;box-shadow:0 22px 50px rgba(55,70,54,.16)}
+.coach-close-inner h2{font:500 44px/1.15 "Playfair Display",serif;margin:0 auto 18px;max-width:700px}
+.coach-close-inner p{color:#d8cdbb;font-size:19px;margin:0 0 28px}
+.coach-close-inner .eyebrow{color:#ffe2ca}
+@media(max-width:760px){.coach-close{padding:64px 18px}
+.coach-close-inner{padding:46px 24px}
+.coach-close-inner h2{font-size:36px}
+}
+.video-quote{display:block;overflow:hidden;padding:0}
+.video-quote video{display:block;width:100%;aspect-ratio:9/16;max-height:520px;object-fit:cover;background:#201b17}
+.video-quote>div{padding:24px}
+.video-quote>div p{margin-bottom:0}
+.quote-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.quote{min-height:280px}
+.quote img{width:150px;height:150px}
+.video-quote video{max-height:620px}
+.featured-quote{padding:76px 28px;background:#f6f0e3}
+.featured-quote figure{max-width:880px;margin:0 auto;display:grid;grid-template-columns:112px 1fr;column-gap:30px;align-items:center;background:#fffdf8;border-radius:28px;padding:38px 44px;box-shadow:0 18px 44px rgba(63,41,25,.07)}
+.featured-quote img{grid-row:1/3;width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:50% 42%;box-shadow:0 9px 24px rgba(63,41,25,.15)}
+.featured-quote blockquote{font:italic 500 20px/1.55 "Playfair Display",serif;color:#3b291d;margin:0}
+.hero-proof{max-width:780px;margin:0 auto;padding:64px 28px 6px;text-align:center}
+.hero-proof blockquote{font:italic 500 25px/1.45 "Playfair Display",serif;color:#49382c;margin:0}
+.hero-proof cite{display:block;margin-top:20px;font:700 15px "DM Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8f3508}
+@media(max-width:760px){.hero-proof blockquote{font-size:21px}
+}
+.featured-quote figcaption{margin-top:13px;color:#8f3508;font-weight:600;font-size:17px}
+@media(max-width:760px){.quote-grid{grid-template-columns:1fr}
+.quote{min-height:240px}
+.featured-quote{padding:58px 18px}
+.featured-quote figure{grid-template-columns:76px 1fr;gap:20px;padding:28px 24px}
+.featured-quote img{width:76px;height:76px}
+.featured-quote blockquote{font-size:21px}
+.featured-quote figcaption{grid-column:2}
+}
+.sachi-video-wrap{position:relative;aspect-ratio:9/16;max-height:620px;background:#201b17}
+.sachi-video-wrap video{width:100%;height:100%;object-fit:cover}
+.sachi-poster{position:absolute;inset:0;border:0;padding:0;background:#201b17;cursor:pointer}
+.sachi-poster[hidden]{display:none}
+.sachi-poster img{width:100%;height:100%;object-fit:cover}
+.sachi-poster span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:rgba(194,79,10,.92);color:white;font-size:23px;padding-left:3px;box-shadow:0 10px 26px rgba(0,0,0,.2)}
+</style>
 <script>
 /* Replace this one value with the Cal.com 30-minute booking URL when it is ready. */
 const COACHING_URL = "coaching.html";
@@ -190,4 +374,31 @@ document.addEventListener("DOMContentLoaded", () => {
 .coming-video{display:flex;align-items:center;justify-content:center;background:#ece9dd;min-height:230px}.coming-video div{padding:38px;text-align:center}.coming-video p{font-family:'Karla',sans-serif;font-style:normal;text-transform:uppercase;letter-spacing:2px;font-size:13px;color:var(--sage-ink)}.faq{background:var(--cream2);border-top:1.5px dashed var(--hair);padding:96px 28px}.faq-inner{max-width:850px}.faq-list{border-top:1px solid var(--hair)}.faq details{border-bottom:1px solid var(--hair);padding:24px 0}.faq summary{cursor:pointer;font-family:'Fraunces',serif;font-size:23px;color:var(--ink);list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:'+';float:right;color:var(--sage-ink)}.faq details[open] summary::after{content:'–'}.faq details p{font-size:18.5px;line-height:1.72;color:var(--ink-soft);max-width:760px}.faq-close{text-align:center;font-family:'Fraunces',serif;font-style:italic;font-size:23px;margin:38px 0 0}.faq-close a{color:var(--sage-ink);border-bottom:1px solid var(--sage)}#book{scroll-margin-top:30px}.calendar-wrap{background:var(--sage-deep);border-radius:30px;padding:55px;margin-top:45px}.calendar-wrap h2,.calendar-wrap p{color:var(--cream2);text-align:center}.calendar-frame{position:relative;margin-top:30px;min-height:760px;border-radius:22px;overflow:hidden;background:#fffaf0}.calendar-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-style:italic;font-size:21px;color:#71806d;background:linear-gradient(100deg,#fffaf0 20%,#f4eddf 40%,#fffaf0 60%);background-size:220% 100%;animation:calendar-breathe 2.4s ease-in-out infinite;transition:opacity .6s ease}.calendar-frame.loaded .calendar-loading{opacity:0;pointer-events:none}.calendar-wrap iframe{position:relative;display:block;width:100%;height:760px;border:0;background:transparent;opacity:0;transition:opacity .65s ease}.calendar-frame.loaded iframe{opacity:1}@keyframes calendar-breathe{0%,100%{background-position:100% 0}50%{background-position:0 0}}
 @media(max-width:960px){.coach-hero{grid-template-columns:1fr;gap:36px;padding:42px 20px 72px}.coach-hero-photo{height:460px;order:-1}.coach-hero h1{font-size:42px}.case,.case:nth-child(even){grid-template-columns:1fr;max-width:660px;margin:auto}.case:nth-child(even) img{order:0}.case img{height:390px;min-height:0}.case .body{padding:42px}.quote-grid{grid-template-columns:1fr;max-width:660px}.calendar-wrap{padding:25px 15px}.calendar-wrap iframe{height:700px}}
 @media(max-width:560px){.how-it-works{padding-top:65px;padding-bottom:65px}.how-it-works p{font-size:18.5px}.coach-intro p{font-size:18.5px}.case p{font-size:18px}.coach-hero{padding:55px 20px}.coach-hero h1{font-size:38px}.case-grid{gap:30px}.case img{height:300px}.case .body{padding:32px 28px}.case h3{font-size:30px}.case blockquote{font-size:20px}.quote{grid-template-columns:118px 1fr;min-height:190px}.quote img{width:118px;min-height:190px}.quote div{padding:25px 24px 22px 0}.quote h3{font-size:22px}.quote p{font-size:17px}.calendar-wrap{border-radius:20px;margin-left:-2px;margin-right:-2px}}
-</style></head><body><nav class="site-header"><a href="index.html"><img alt="Motherhood made yours" class="logo" decoding="async" height="288" loading="eager" src="assets/img/logo.png" width="800"/></a><div class="links"><a href="about.html">The Journey</a><a href="podcast.html">Podcast</a><a href="community.html">Community</a><a href="coaching.html">Coaching</a><a href="letters.html">Letters</a><a class="btn" href="coaching.html#book">Let's chat</a></div></nav><main><header class="coach-hero wrap"><div><div class="eyebrow">One-on-one coaching with me</div><h1>This is a <em>soft</em> place to land.</h1><p>Real conversation about where you are and where you want to be.</p><a class="btn coach-hero-cta" href="#book">Let's chat</a></div><div class="coach-hero-photo"><img alt="" decoding="async" fetchpriority="high" height="600" loading="eager" src="assets/img/coaching.webp" width="900"/></div></header><section class="hero-proof"><blockquote>“I can see possibilities in life that are laid out before me without the need to control their outcome.”</blockquote><cite>— Laura</cite></section><section class="coach-intro"><div class="wrap inner"><div class="eyebrow">What it looks like</div><h2>The work is the inner journey.</h2><p>I have been coaching women for over a decade, through every kind of season and change. The women I work with come from all walks of life - different careers and different professions. And being a stay-at-home mom is absolutely a full-time career. The work meets on the level of motherhood. Whatever challenge or opportunity is in front of you, we look at the question underneath it - who do you need to be here?</p><p>We meet one-on-one over video and begin wherever you are that day. There is space to slow down, say the thing out loud, and listen for what feels true. No judgment, no rushing, no ten-step program. I draw on simple tools I practise myself, always in service of helping you hear yourself, know what is true for you, and become who you need to be.</p><p>We start with a relaxed thirty-minute chat to meet each other. If it feels right, we keep going from there and shape the work around your season and your real life (nap schedules included).</p></div></section><section class="wrap"><div class="sec-head"><div class="eyebrow">Their stories</div><h2>Different women, different lives. The way back is always home to herself.</h2></div><div class="case-grid"><article class="case"><img alt="Amy" decoding="async" height="540" loading="lazy" src="assets/testimonials/amy-kochek-2.webp" width="960"/><div class="body"><h3>Amy</h3><p>After being laid off from what she believed was her dream job, Amy felt angry, stuck and unsure what came next. Amy has shared that our work helped her turn some of her attention inward and feel more connected to herself.</p><blockquote>“I feel like who I am, it hasn't changed. It's just I'm back home.”</blockquote></div></article><article class="case"><img alt="Abby" decoding="async" height="1280" loading="lazy" src="assets/testimonials/abby-kochek.webp" width="720"/><div class="body"><h3>Abby</h3><p>For at least 10 years, Abby had felt stuck - ready for change and afraid of it at the same time. In our conversations, Abby began noticing patterns she had not seen before and finding practical ways to meet stress and change differently.</p><blockquote>“I always feel validated, I feel seen, I feel truly heard.”</blockquote></div></article><article class="case"><img alt="Jennifer" decoding="async" height="854" loading="lazy" src="assets/testimonials/jennifer-muscatel.webp" width="480"/><div class="body"><h3>Jennifer</h3><p>Jennifer came to me with an issue involving a colleague. In our conversations, she noticed a deeper pattern beneath the conflict she had come in with.</p><blockquote>“I have worked with therapists my whole life, since I was 12... in the two times I've worked with Kacy, I have had breakthroughs and aha moments that were quite remarkable.”</blockquote></div></article></div></section><section class="coach-quotes"><div class="wrap"><div class="sec-head"><div class="eyebrow">In their own words</div><h2>More from women who came home to themselves.</h2></div><div class="quote-grid"><article class="quote"><img alt="Anna" decoding="async" height="854" loading="lazy" src="assets/testimonials/anna.webp" width="480"/><div><h3>Anna</h3><p>“Now I understand how to use energy, how to listen to my body, how to listen to my intuition and receive the guidance.”</p></div></article><article class="quote"><img alt="Helia" decoding="async" height="854" loading="lazy" src="assets/testimonials/helia.webp" width="480"/><div><h3>Helia</h3><p>“I became really, really calm and serene in a very short period of time with Kacy.”</p></div></article><article class="quote"><img alt="Mariam" decoding="async" height="854" loading="lazy" src="assets/testimonials/mariam-aziz.webp" width="480"/><div><h3>Mariam</h3><p>“Kacy gave me a lot of tools in my life... where I can really set those boundaries and not feel shame.”</p></div></article><article class="quote"><img alt="Jennifer" decoding="async" height="854" loading="lazy" src="assets/testimonials/jennifer-muscatel.webp" width="480"/><div><h3>Jennifer</h3><p>“In the two times that I’ve worked with Kacy, I have had breakthroughs and aha moments that were quite remarkable.”</p></div></article><article class="quote"><img alt="Jennifer" decoding="async" height="1280" loading="lazy" src="assets/testimonials/jennifer-reed.webp" width="720"/><div><h3>Jennifer</h3><p>“I am in control of my money. My money is not in control of me.”</p></div></article></div></div></section><section class="faq"><div class="wrap faq-inner"><div class="sec-head"><div class="eyebrow">Questions, answered</div><h2>Before we talk, you might be wondering...</h2></div><div class="faq-list"><details><summary>What happens in an alignment chat?</summary><p>It is a relaxed 30-minute conversation, not a sales script. You can tell me what has been feeling heavy, unclear, or ready to change. I will listen, ask a few honest questions, and we will see whether working together feels right for both of us.</p></details><details><summary>Is this therapy?</summary><p>No. I am a coach, not a therapist, and our work is not a replacement for mental-health or medical care. Coaching gives us a place to slow down, notice what is keeping you stuck, and make room for choices that feel more like your own. If what you need is outside my scope, I will say so plainly.</p></details><details><summary>Do I have to be a certain kind of mother?</summary><p>No. There is no mold to fit and no right way to do this. What matters is that you want to hear yourself more clearly and make choices that feel true for you and your family.</p></details><details><summary>What does coaching cost?</summary><p>The alignment chat is free. If we both feel there is a fit, I will walk you through the coaching options and cost before you decide anything. There is no pressure to commit on the call.</p></details><details><summary>What tools do you teach?</summary><p>Simple practices I use in my own life. They are clarity tools, never homework for its own sake. They help you hear yourself, know what is true for you, and become who you need to be - in motherhood and beyond it.</p></details><details><summary>What if I am not sure I am “your person”?</summary><p>You do not need to arrive certain. If you have spent so long listening to everyone else's shoulds that you can barely hear your own voice, we already have somewhere honest to begin. The chat is simply a chance to meet and find out whether this feels like a place you can exhale.</p></details></div><p class="faq-close">Have more questions? <a href="#book">Let's chat.</a></p></div></section><section class="featured-quote"><div class="wrap"><figure><img alt="Tristen" decoding="async" height="320" loading="lazy" src="assets/testimonials/tristen.webp" width="320"/><blockquote>“I am reflecting on my life over the last few years and I want you to know how grateful I am for your role in guiding me through the lessons I have learned.”</blockquote><figcaption>Tristen</figcaption></figure></div></section><section class="coach-quotes coach-quotes-after"><div class="wrap"><div class="sec-head"><div class="eyebrow">More words from the women</div><h2>Every story is different. The return to yourself is your own.</h2></div><div class="quote-grid"><article class="quote"><img alt="Amy" decoding="async" height="540" loading="lazy" src="assets/testimonials/amy-kochek-2.webp" width="960"/><div><h3>Amy</h3><p>“I feel like who I am, it hasn't changed. It's just I'm back home.”</p></div></article><article class="quote"><img alt="Abby" decoding="async" height="1280" loading="lazy" src="assets/testimonials/abby-kochek.webp" width="720"/><div><h3>Abby</h3><p>“I always feel validated, I feel seen, I feel truly heard.”</p></div></article><article class="quote"><img alt="Karla" decoding="async" height="1280" loading="lazy" src="assets/testimonials/karla.webp" width="720"/><div><h3>Karla</h3><p>“Working with her helped me to define my goals and know what it is that I’m working towards.”</p></div></article><article class="quote"><img alt="Chrissy" decoding="async" height="720" loading="lazy" src="assets/testimonials/chrissy-boyce.webp" width="1280"/><div><h3>Chrissy</h3><p>“I have a different level of self-acceptance and that was huge for me.”</p></div></article><article class="quote video-quote"><div class="sachi-video-wrap"><video controls playsinline preload="none" poster="assets/testimonials/sachi-cover-clean-v2.jpg"><source src="assets/testimonials/sachi-testimonial.mp4" type="video/mp4"/>Your browser does not support inline video.</video><button class="sachi-poster" aria-label="Play Sachi testimonial" onclick="this.hidden=true;this.previousElementSibling.play()" type="button"><img alt="Sachi" src="assets/testimonials/sachi-cover-clean-v2.jpg"/><span>▶</span></button></div><div><h3>Sachi</h3><p>Hear Sachi share her experience in her own words.</p></div></article></div></div></section><section class="coach-close"><div class="wrap"><div class="coach-close-inner"><div class="eyebrow">Ready when you are</div><h2>You do not have to figure it all out alone.</h2><p>Wherever you are right now, we will start there.</p><a class="btn" href="#book">Let's chat</a></div></div></section><section class="wrap" id="book"><div class="calendar-wrap"><h2>Book an alignment chat</h2><p>A relaxed 30-minute video chat. Bring your questions and let's talk.</p><div class="calendar-frame"><div class="calendar-loading" aria-live="polite">Loading the calendar...</div><iframe loading="lazy" onload="this.parentElement.classList.add('loaded')" src="https://cal.com/kacy/alignment-chat?embed=true&theme=light" title="Book an alignment chat with me"></iframe></div><p class="email">Not ready to book? You can write to me anytime at kacy@motherhoodmadeyours.com. I read everything myself.</p></div></section></main><footer><img alt="Motherhood made yours" class="logo" decoding="async" height="288" loading="lazy" src="assets/img/logo.png" width="800"/><p class="tag">For women making motherhood their own.</p><p style="max-width:580px;margin:24px auto 0;font-size:14.5px;line-height:1.75;color:#957b65">Motherhood is a journey, and every woman walks it her own way. Your experience and your perspective have value here - we are all doing our best.</p><div class="links"><a href="about.html">The Journey</a><a href="podcast.html">Podcast</a><a href="community.html">Community</a><a href="coaching.html">Coaching</a><a href="letters.html">Letters</a><a class="footer-cta" href="coaching.html#book">Let's chat</a></div><div class="fine">© 2026 Motherhood Made Yours · Made slowly, at home</div></footer></body></html>
+</style></head>
+<body><nav class="site-header"><a href="index.html"><img alt="Motherhood made yours" class="logo" decoding="async" height="288" loading="eager" src="assets/img/logo.png" width="800"/></a><div class="links"><a href="about.html">My Story</a><a href="podcast.html">Podcast</a><a href="community.html">Community</a><a href="coaching.html">Coaching</a><a href="letters.html">Letters</a><a class="btn" href="coaching.html#book">Let's chat</a></div></nav>
+<main><header class="coach-hero wrap"><div><div class="eyebrow">One-on-one coaching with me</div><h1>This is a <em>soft</em> place to land.</h1><p>Real conversation about where you are and where you want to be.</p><a class="btn coach-hero-cta" href="#book">Let's chat</a></div><div class="coach-hero-photo"><img alt="" decoding="async" fetchpriority="high" height="600" loading="eager" src="assets/img/coaching.webp" width="900"/></div></header>
+<section class="coach-intro"><div class="wrap inner"><div class="eyebrow">What it looks like</div><h2>The work is the inner journey.</h2><p>I have been coaching women for over a decade, through every kind of season and change. The women I work with come from all walks of life - different careers and different professions. And being a stay-at-home mom is absolutely a full-time career. The work meets on the level of motherhood. Whatever challenge or opportunity is in front of you, we look at the question underneath it - who do you need to be here?</p><p>We meet one-on-one over video and begin wherever you are that day. There is space to slow down, say the thing out loud, and listen for what feels true. No judgment, no rushing, no ten-step program. I draw on simple tools I practise myself, always in service of helping you hear yourself, know what is true for you, and become who you need to be.</p><p>We start with a relaxed thirty-minute chat to meet each other. If it feels right, we keep going from there and shape the work around your season and your real life (nap schedules included).</p></div></section>
+<section class="hero-proof"><blockquote>“I can see possibilities in life that are laid out before me without the need to control their outcome.”</blockquote><cite>— Laura</cite></section>
+<section class="wrap"><div class="sec-head"><div class="eyebrow">Their stories</div><h2>Different women, different lives. The way back is always home to herself.</h2></div><div class="case-grid"><article class="case"><img alt="Amy" decoding="async" height="540" loading="lazy" src="assets/testimonials/amy-kochek-2.webp" width="960"/><div class="body"><h3>Amy</h3><p>After being laid off from what she believed was her dream job, Amy felt angry, stuck and unsure what came next. Amy has shared that our work helped her turn some of her attention inward and feel more connected to herself.</p><blockquote>“I feel like who I am, it hasn't changed. It's just I'm back home.”</blockquote></div></article>
+<article class="case"><img alt="Abby" decoding="async" height="1280" loading="lazy" src="assets/testimonials/abby-kochek.webp" width="720"/><div class="body"><h3>Abby</h3><p>For at least 10 years, Abby had felt stuck - ready for change and afraid of it at the same time. In our conversations, Abby began noticing patterns she had not seen before and finding practical ways to meet stress and change differently.</p><blockquote>“I always feel validated, I feel seen, I feel truly heard.”</blockquote></div></article>
+<article class="case"><img alt="Jennifer" decoding="async" height="854" loading="lazy" src="assets/testimonials/jennifer-muscatel.webp" width="480"/><div class="body"><h3>Jennifer</h3><p>Jennifer came to me with an issue involving a colleague. In our conversations, she noticed a deeper pattern beneath the conflict she had come in with.</p><blockquote>“I have worked with therapists my whole life, since I was 12... in the two times I've worked with Kacy, I have had breakthroughs and aha moments that were quite remarkable.”</blockquote></div></article></div></section>
+<section class="coach-quotes"><div class="wrap"><div class="sec-head"><div class="eyebrow">In their own words</div><h2>More from women who came home to themselves.</h2></div><div class="quote-grid"><article class="quote"><img alt="Anna" decoding="async" height="854" loading="lazy" src="assets/testimonials/anna.webp" width="480"/><div><h3>Anna</h3><p>“Now I understand how to use energy, how to listen to my body, how to listen to my intuition and receive the guidance.”</p></div></article>
+<article class="quote"><img alt="Helia" decoding="async" height="854" loading="lazy" src="assets/testimonials/helia.webp" width="480"/><div><h3>Helia</h3><p>“I became really, really calm and serene in a very short period of time with Kacy.”</p></div></article>
+<article class="quote"><img alt="Mariam" decoding="async" height="854" loading="lazy" src="assets/testimonials/mariam-aziz.webp" width="480"/><div><h3>Mariam</h3><p>“Kacy gave me a lot of tools in my life... where I can really set those boundaries and not feel shame.”</p></div></article>
+<article class="quote"><img alt="Jennifer" decoding="async" height="854" loading="lazy" src="assets/testimonials/jennifer-muscatel.webp" width="480"/><div><h3>Jennifer</h3><p>“In the two times that I’ve worked with Kacy, I have had breakthroughs and aha moments that were quite remarkable.”</p></div></article>
+<article class="quote"><img alt="Jennifer" decoding="async" height="1280" loading="lazy" src="assets/testimonials/jennifer-reed.webp" width="720"/><div><h3>Jennifer</h3><p>“I am in control of my money. My money is not in control of me.”</p></div></article></div></div></section>
+<section class="faq"><div class="wrap faq-inner"><div class="sec-head"><div class="eyebrow">Questions, answered</div><h2>Before we talk, you might be wondering...</h2></div><div class="faq-list"><details><summary>What happens in an alignment chat?</summary><p>It is a relaxed 30-minute conversation, not a sales script. You can tell me what has been feeling heavy, unclear, or ready to change. I will listen, ask a few honest questions, and we will see whether working together feels right for both of us.</p></details>
+<details><summary>Is this therapy?</summary><p>No. I am a coach, not a therapist, and our work is not a replacement for mental-health or medical care. Coaching gives us a place to slow down, notice what is keeping you stuck, and make room for choices that feel more like your own. If what you need is outside my scope, I will say so plainly.</p></details>
+<details><summary>Do I have to be a certain kind of mother?</summary><p>No. There is no mold to fit and no right way to do this. What matters is that you want to hear yourself more clearly and make choices that feel true for you and your family.</p></details>
+<details><summary>What does coaching cost?</summary><p>The alignment chat is free. If we both feel there is a fit, I will walk you through the coaching options and cost before you decide anything. There is no pressure to commit on the call.</p></details>
+<details><summary>What tools do you teach?</summary><p>Simple practices I use in my own life. They are clarity tools, never homework for its own sake. They help you hear yourself, know what is true for you, and become who you need to be - in motherhood and beyond it.</p></details>
+<details><summary>What if I am not sure I am “your person”?</summary><p>You do not need to arrive certain. If you have spent so long listening to everyone else's shoulds that you can barely hear your own voice, we already have somewhere honest to begin. The chat is simply a chance to meet and find out whether this feels like a place you can exhale.</p></details></div><p class="faq-close">Have more questions? <a href="#book">Let's chat.</a></p></div></section>
+<section class="featured-quote"><div class="wrap"><figure><img alt="Tristen" decoding="async" height="320" loading="lazy" src="assets/testimonials/tristen.webp" width="320"/><blockquote>“I am reflecting on my life over the last few years and I want you to know how grateful I am for your role in guiding me through the lessons I have learned.”</blockquote><figcaption>Tristen</figcaption></figure></div></section>
+<section class="coach-quotes coach-quotes-after"><div class="wrap"><div class="sec-head"><div class="eyebrow">More words from the women</div><h2>Every story is different. The return to yourself is your own.</h2></div><div class="quote-grid"><article class="quote"><img alt="Amy" decoding="async" height="540" loading="lazy" src="assets/testimonials/amy-kochek-2.webp" width="960"/><div><h3>Amy</h3><p>“I feel like who I am, it hasn't changed. It's just I'm back home.”</p></div></article>
+<article class="quote"><img alt="Abby" decoding="async" height="1280" loading="lazy" src="assets/testimonials/abby-kochek.webp" width="720"/><div><h3>Abby</h3><p>“I always feel validated, I feel seen, I feel truly heard.”</p></div></article>
+<article class="quote"><img alt="Karla" decoding="async" height="1280" loading="lazy" src="assets/testimonials/karla.webp" width="720"/><div><h3>Karla</h3><p>“Working with her helped me to define my goals and know what it is that I’m working towards.”</p></div></article>
+<article class="quote"><img alt="Chrissy" decoding="async" height="720" loading="lazy" src="assets/testimonials/chrissy-boyce.webp" width="1280"/><div><h3>Chrissy</h3><p>“I have a different level of self-acceptance and that was huge for me.”</p></div></article>
+<article class="quote video-quote"><div class="sachi-video-wrap"><video controls playsinline preload="none" poster="assets/testimonials/sachi-cover-clean-v2.jpg"><source src="assets/testimonials/sachi-testimonial.mp4" type="video/mp4"/>Your browser does not support inline video.</video><button class="sachi-poster" aria-label="Play Sachi testimonial" onclick="this.hidden=true;this.previousElementSibling.play()" type="button"><img alt="Sachi" src="assets/testimonials/sachi-cover-clean-v2.jpg"/><span>▶</span></button></div><div><h3>Sachi</h3><p>Hear Sachi share her experience in her own words.</p></div></article></div></div></section>
+<section class="coach-close"><div class="wrap"><div class="coach-close-inner"><div class="eyebrow">Ready when you are</div><h2>You do not have to figure it all out alone.</h2><p>Wherever you are right now, we will start there.</p><a class="btn" href="#book">Let's chat</a></div></div></section>
+<section class="wrap" id="book"><div class="calendar-wrap"><h2>Book an alignment chat</h2><p>A relaxed 30-minute video chat. Bring your questions and let's talk.</p><div class="calendar-frame"><div class="calendar-loading" aria-live="polite">Loading the calendar...</div><iframe loading="lazy" onload="this.parentElement.classList.add('loaded')" src="https://cal.com/kacy/alignment-chat?embed=true&theme=light" title="Book an alignment chat with me"></iframe></div><p class="email">Not ready to book? You can write to me anytime at kacy@motherhoodmadeyours.com. I read everything myself.</p></div></section></main>
+<footer><img alt="Motherhood made yours" class="logo" decoding="async" height="288" loading="lazy" src="assets/img/logo.png" width="800"/><p class="tag">For women making motherhood their own.</p><p style="max-width:580px;margin:24px auto 48px;font-size:14.5px;line-height:1.75;color:#957b65">Motherhood is a journey, and every woman walks it her own way. Your experience and your perspective have value here - we are all doing our best.</p><div class="links"><a href="about.html">My Story</a><a href="podcast.html">Podcast</a><a href="community.html">Community</a><a href="coaching.html">Coaching</a><a href="letters.html">Letters</a><a class="footer-cta" href="coaching.html#book">Let's chat</a></div><div class="fine">© 2026 Motherhood Made Yours · Made slowly, at home</div></footer></body></html>
