@@ -1,0 +1,24 @@
+name: Decode cover images
+on:
+  push:
+    paths:
+      - 'covers-b64/**'
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode covers into assets
+        run: |
+          base64 -d covers-b64/kailee-cover.b64 > assets/testimonials/kailee-cover.png
+          base64 -d covers-b64/amy-cover.b64 > assets/testimonials/amy-cover.png
+          base64 -d covers-b64/abby-cover.b64 > assets/testimonials/abby-cover.png
+      - name: Commit images
+        run: |
+          git config user.name "kacyobrien"
+          git config user.email "kacyobrien@users.noreply.github.com"
+          git add assets/testimonials/kailee-cover.png assets/testimonials/amy-cover.png assets/testimonials/abby-cover.png
+          git commit -m "Add Kailee, Amy, Abby cover images" || exit 0
+          git push
