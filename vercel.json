@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "routes": [
+    {
+      "src": "/community(?:\\.html)?/?",
+      "status": 404
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
