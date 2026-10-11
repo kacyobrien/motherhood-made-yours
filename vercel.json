@@ -1,1 +1,1 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","buildCommand":"mkdir -p public && cp launch/index.html public/index.html","outputDirectory":"public","routes":[{"handle":"filesystem"}]}
+{"$schema":"https://openapi.vercel.sh/vercel.json","buildCommand":"mkdir -p public && cp launch/launch/index.html public/index.html","outputDirectory":"public","routes":[{"handle":"filesystem"}]}
